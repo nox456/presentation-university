@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .name {
+        @apply grid grid-cols-13 w-full;
+    }
+    .letter {
+        @apply text-center
+    }
+    .letter span {
+        @apply block text-[150%] border border-blue-400 bg-blue-800 rounded transition-[transform,color] cursor-pointer select-none
+    }
+    .letter-active span {
+        @apply duration-[600ms] delay-[0ms,300ms] [transform:rotate3d(0,0,0,180deg)] text-white
+    }
+    .letter-disactive span {
+        @apply duration-300 delay-[150ms,0ms] [transform:rotate3d(0,1,0,180deg)] text-blue-800
+    }
+    .highlight {
+        @apply font-bold text-blue-400
+    }
+}
