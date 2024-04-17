@@ -5,7 +5,8 @@
     "type": "module",
     "scripts": {
         "dev": "serve src/",
-        "tailwind_dev": "tailwindcss -i ./src/input.css -o ./src/styles.css --watch"
+        "tailwind_dev": "tailwindcss -i ./src/input.css -o ./src/styles.css --watch",
+        "build": "tailwindcss -i ./src/input.css -o ./src/styles.css"
     },
     "keywords": [],
     "author": "",
